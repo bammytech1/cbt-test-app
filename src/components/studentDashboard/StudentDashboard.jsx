@@ -1,8 +1,11 @@
 
 // import { Link } from "react-router-dom" 
 import logo from "../../assets/aaua-logo.svg"
+
 import "./StudentDashboard.scss"
-import Instructions from "./instructions"
+import Nav from "../Nav/Nav"
+// import Instructions from "./instructions"
+import StartExam from "./startExam"
 
 function StudentDashboard() {
   return (
@@ -11,9 +14,7 @@ function StudentDashboard() {
             <h3>ADEKUNLE AJASHIN UNIVERSITY AKUNGBA AKOKO</h3>
             <img src={logo} alt="" />
         </header>
-        <nav>
-
-        </nav>
+        <Nav />
         <main className=" main-container row-this">
             <aside className="profile col-this">
                 <img src={logo} alt="" />
@@ -51,9 +52,9 @@ function StudentDashboard() {
                 <button className="btn-sec">LOG OUT</button>
 
             </aside>
-            {/* <span className="divider"></span> */}
             <section className="student-details col-this">
-                <Instructions />
+                {/* <Instructions /> */}
+                <StartExam />
             </section>
         </main>
 

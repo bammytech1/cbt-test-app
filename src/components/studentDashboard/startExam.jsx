@@ -1,22 +1,22 @@
 
 
-function StartExam() {
+function startExam() {
   return (
     <>
         <div className="btn-group">
             <button className="btn-pry">TEST</button>
-            <button className="btn-sec">TEST</button>
+            <button className="btn-pry">TEST</button>
         </div>
-        <div className="questions-container">
-            <h3>1.Function can be either called by value or reference</h3>
-            <input type="radio">Answer 1</input>
-            <input type="radio">Answer 2</input>
-            <input type="radio">Answer 3</input>
-            <input type="radio">Answer 4</input>
-            <input type="radio">Answer 5</input>
-        </div>
-        <div>
-
+        
+        <div className="question-container">
+          <h3>1. Function can be either called by value or reference</h3>
+          <form className="answers">
+            <label><input type="radio" className=""  />Answer 1</label>
+            <label><input type="radio" className=""  />Answer 2</label>
+            <label><input type="radio" className=""  />Answer 3</label>
+            <label><input type="radio" className=""  />Answer 4</label>
+            <label><input type="radio" className=""  />Answer 5</label>  
+          </form> 
         </div>
         <div className="btn-controls">
             <button className="btn-pry">PREV</button>
@@ -27,4 +27,4 @@ function StartExam() {
   )
 }
 
-export default StartExam
+export default startExam
