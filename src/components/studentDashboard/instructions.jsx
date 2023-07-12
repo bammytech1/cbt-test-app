@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+// import { Redirect } from "react-router-dom"
 
 function Instructions() {
   return (
@@ -20,7 +21,8 @@ function Instructions() {
 
                     </ul>
                 </div>
-                <button className="btn-pry"><Link to="/instruction">START EXAM</Link></button>
+                
+                {/* <button className="btn-pry"><Link to="/startexam">START EXAM</Link></button> */}
     </>
   )
 }

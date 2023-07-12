@@ -12,14 +12,14 @@ function Login() {
   const [inputsError, setInputsError] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
 
-function submit(e) {
-  e.preventDefault()
-  validateForm(inputs)
-  setInputs({studentId: "", password: ""})
-  setInputsError(validateForm(inputs));
-  setIsSubmit(true)
-  // alert(inputs)
-}
+    function submit(e) {
+    e.preventDefault()
+    validateForm(inputs)
+    setInputs({studentId: "", password: ""})
+    setInputsError(validateForm(inputs));
+    setIsSubmit(true)
+    // alert(inputs)
+    }
 
 
 function handleChange(e) {
