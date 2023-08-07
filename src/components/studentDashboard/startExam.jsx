@@ -52,7 +52,7 @@ function startExam() {
     setChecked(check)
   }
 
-  /** finish exam aftr last question */
+  /** finish exam after last question */
 
   if(result.length && result.length >= queue.length) {
     return <Navigate to={'/result'} replace={true}></Navigate>
@@ -60,13 +60,6 @@ function startExam() {
 
   return (
     <section id="tostartexam">
-      {/* {questions.map(exam => {
-          return (
-            <Examination {...exam} key={exam.id} />
-          )})
-        }  */}
-      {/* <Examination {...questions} /> */}
-
       <Questions onChecked={onChecked} />
       <div className="flex-wrap">
             {queue?.map((list, index) => {
